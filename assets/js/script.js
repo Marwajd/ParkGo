@@ -100,3 +100,20 @@ scrollTirggerAnimation(".whyus", [".whyus .box1", ".whyus .box2", ".whyus .box3"
 scrollTirggerAnimation(".feedback .container", [".feedback .label", ".feedback .heading", ".feedback .paragraph"]);
 
 galleryAnimation(".feedback .voices", [".feedback .voices .box1",".feedback .voices .box2",".feedback .voices .box3",".feedback .voices .box4",".feedback .voices .box5",".feedback .voices .box6"])
+////// Reservation
+$(document).ready(function(){
+
+    $('#smartwizard').smartWizard({
+      selected: 0,
+      theme: 'arrows',
+      autoAdjustHeight:true,
+      transitionEffect:'fade',
+      showStepURLhash: false,
+
+});
+
+});
+                  var myLink = document.querySelector('a[href="#"]');
+                  myLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                  });

@@ -58,7 +58,7 @@ section.home {
 .home .home-box {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("/assets/image/home-background.jpg");
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("assets/image/home-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -238,10 +238,10 @@ section.home {
     opacity: 0;
 }
 .home .home-box .content .inner-content {
-    width: 100%; 
+    width: 100%;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 /* --------------- why us -----------------*/
@@ -277,11 +277,68 @@ section.home {
 .whyus .container .box p {
     color: #666;
 }
+/*------- Reservation-------*/
+
+.btn.btn-purple {
+    color: #ffffff; /* Couleur du texte */
+    background-color: #800080; /* Couleur de fond */
+    border-color: #800080; /* Couleur de la bordure */
+}
+
+.btn.btn-purple:hover {
+    color: #ffffff;
+    background-color: #6a007d;
+    border-color: #6a007d;
+}
+
+/* Couleur du texte des étapes */
+#smartwizard ul li a {
+    color: #ffffff;
+}
+
+/* Couleur de fond des étapes */
+/* Couleur de fond des étapes */
+#smartwizard ul li > a {
+    background-color: #800080; /* Modifier en #800080 */
+}
+
+/* Couleur de la bordure des étapes */
+#smartwizard ul li > a > small:before,
+#smartwizard ul li > a > small:after {
+    border-color: #800080; /* Modifier en #800080 */
+}
 
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: rgb(255, 255, 255);
+    border-color: #6a007d;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(224, 15, 196, 0.603);
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5);
+}
+
+.close:focus {
+    box-shadow: 0 0 0 0rem rgba(228, 231, 235, 0.925);
+}
+
+.mt-400 {
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #6a007d;
+}
 
 /*---------------- feedback ------------------*/
-.feedback {
+ .feedback {
     background: url("/assets/image/section-background3.jpg");
     background-position: center;
     background-size: cover;
